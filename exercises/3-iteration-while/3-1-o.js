@@ -15,8 +15,7 @@ function draw() {
 function drawGradient() {
     let i = 0;
     while (i <= 300) {
-        let gray = i / 300 * 255;
-        context.strokeStyle = Utils.rgb(gray, gray, gray);
+        context.strokeStyle = Utils.rgb(i, i, i);
         Utils.drawLine(50 + i, 50, 50 + i, 350);
         i++;
     }
