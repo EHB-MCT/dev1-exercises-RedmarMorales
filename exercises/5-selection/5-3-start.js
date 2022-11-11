@@ -22,14 +22,11 @@ function reset() {
     context.fillRect(0, 0, width, height);
 }
 
-function drawCard(x, y, pick) {
+function drawCard(x, y) {
     let r = Utils.randomNumber(1, 13);
     context.lineWidth = 2;
-    if (pick) {
-        context.fillStyle = "yellow";
-    } else {
-        context.fillStyle = "white";
-    }
+    context.fillStyle = "white";
+
     context.beginPath();
     context.rect(x - 50, y - 50, 100, 150);
     context.fill();
